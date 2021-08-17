@@ -11,12 +11,14 @@
     <h1>Olá Mundo!</h1>
 
     <p>Digite aqui seu nome: <br>
-        <input type="text" onchange="helloword()">
+        <input id="nome" type="text" onchange="helloword()">
     </p>
 </body>
     <script>
         function helloword() {
-            window.alert('Hello world')
+            var camponome = document.getElementById('nome');
+            var nome = camponome.value;
+            window.alert(nome)
         }
     </script>
 </html>
